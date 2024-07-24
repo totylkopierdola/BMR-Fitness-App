@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BMR fitness</title>
+    <link rel="stylesheet" href="/src/css/style.css" />
+    <link rel="stylesheet" href="/src/css/quiz.css" />
+  </head>
+  <body>
+    <main id="quiz-app">
+      <section id="login-screen" class="screen active">
+        <div class="logo">
+          <h4>BMR</h4>
+          <span>Fitness</span>
+        </div>
+        <form id="login-form">
+          <label for="name">Enter your name</label>
+          <input type="text" id="name" name="name" required />
+          <button type="submit">Start</button>
+        </form>
+      </section>
+
+      <section id="quiz-screen" class="screen">
+        <button id="reset-btn">Reset</button>
+
+        <div id="question-container">
+          <div id="question-number"></div>
+          <div id="question"></div>
+          <form id="answers"></form>
+        </div>
+        <div class="buttons-section">
+          <button id="prev-btn" class="nav-btn">Previous</button>
+          <button id="next-btn" class="nav-btn">Next</button>
+        </div>
+
+        <div class="extra-calc-section">
+          <label>
+            <input type="checkbox" id="extra-calc-toggle" />
+            I'm a professional sportsman (extra calculations)
+          </label>
+        </div>
+      </section>
+
+      <section id="results-screen" class="screen">
+        <h2>Results</h2>
+        <div id="results"></div>
+        <button id="restart-btn">Restart Quiz</button>
+      </section>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
